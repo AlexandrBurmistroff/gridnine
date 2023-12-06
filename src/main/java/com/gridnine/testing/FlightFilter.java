@@ -1,5 +1,10 @@
 package com.gridnine.testing;
 
-public interface FlightFilter {
+import java.util.List;
 
+/**
+ * Интерфейс для модуля фильтрации перелетов
+ */
+public interface FlightFilter {
+    List<Flight> filterFlights(List<Flight> flights);
 }
